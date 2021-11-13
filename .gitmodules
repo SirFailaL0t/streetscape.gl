@@ -1,0 +1,3 @@
+[submodule "real-time-ros-xviz-server"]
+	path = real-time-ros-xviz-server
+	url = https://git.tu-berlin.de/sirfailalot/real-time-ros-xviz-server.git
