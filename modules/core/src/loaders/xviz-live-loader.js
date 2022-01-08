@@ -106,8 +106,8 @@ export default class XVIZLiveLoader extends XVIZWebsocketLoader {
   }
 
   seek(timestamp) {
-    super.seek(timestamp);
-
+    // Only newest timestamp is required, so super.seek(timestamp) can be skipped
+    this.set('timestamp', timestamp);
     // Info the streamBuffer so it can prune appropriately
     this.streamBuffer.setCurrentTime(timestamp);
   }
